@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    padding: 16px auto;
+}
+
+.text {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--white);
+}
