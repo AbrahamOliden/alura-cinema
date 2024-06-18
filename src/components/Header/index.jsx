@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import HeaderLink from '.././HeaderLink';
 import styles from './index.module.css';
 import logo from './logo-alura.png';
 
@@ -11,6 +12,14 @@ function Header() {
                 <span>Cinema</span>
             </section>
         </Link>
+        <nav>
+          <HeaderLink url='./' >
+            Home
+          </HeaderLink>
+          <HeaderLink url='./Favorites' >
+            Favorites
+          </HeaderLink>
+        </nav>
     </header>
   );
 };
