@@ -1,5 +1,9 @@
 #root {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
   width: 100vw;
   max-width: 1440px;
   text-align: center;
+  background-color: #FAFBFC;
 }
