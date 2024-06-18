@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styles from './index.modules.css';
+import styles from './index.module.css';
 import logo from './logo-alura.png';
 
 function Header() {
