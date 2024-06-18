@@ -1,6 +1,8 @@
+import styles from './index.modules.css'
+
 function Header() {
   return (
-    <header className="" ></header>
+    <header className={styles.header} ></header>
   );
 };
 
