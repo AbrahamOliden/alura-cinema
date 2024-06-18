@@ -2,8 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
     background-color: var(--black);
-    padding: 16px auto;
+    padding: 16px 0;
 }
 
 .text {
