@@ -2,11 +2,11 @@ import styles from './Title.module.css';
 
 import React from 'react'
 
-function Title({ children }) {
+function Title({ text }) {
   return (
-    <div className={styles.title} >
-        {children}
-    </div>
+    <h1 className={styles.title} >
+        {text}
+    </h1>
   );
 };
 
