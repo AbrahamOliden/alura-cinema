@@ -2,18 +2,26 @@ import Banner from "../../components/Banner";
 import Title from "../../components/Title";
 import Card from "../../components/Card";
 import styles from "./Favorites.module.css";
-
-import React from 'react'
+import { useFavoritesContext } from "../../context/Favorites";
 
 function Favorites() {
+
+  const { favorite } = useFavoritesContext();
+
   return (
     <>
     <Banner img="favoritos" color="#00BF63" />
     <Title text="Favoritos"/>
     <section className={styles.container} >
-      <Card 
-        capa="https://i.ytimg.com/vi/cixof3jguHU/maxresdefault.jpg" 
-        titulo="Tacos de sesos" />
+      {
+        favorite.map( video => {
+          return <Card 
+            capa={video.image}
+            titulo={video.title}
+            id={video.id}
+            key={video.id} />
+        })
+      }
     </section>
     </>
   );
