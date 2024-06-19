@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const FavoritesContext = createContext();
 
-FavoritesContext.displayName = "Favorites"
+FavoritesContext.displayName = "Favorites";
 
 export default function FavoritesProvider({children}) {
     const [favorite, setFavorite] = useState([]);
@@ -10,4 +10,26 @@ export default function FavoritesProvider({children}) {
     return <FavoritesContext.Provider value={{favorite, setFavorite}} >
         {children}
     </FavoritesContext.Provider>
-}
+};
+
+export function useFavoritesContext() {
+    const { favorite, setFavorite } = useContext(FavoritesContext);
+
+    function addFavorite(newFavorite) {
+
+        const repeateds = favorite.some(
+            item => item.id === newFavorite.id
+        );
+        let newList = [...favorite];
+
+        if ( !repeateds ) {
+            newList.push(newFavorite);
+            return setFavorite(newList);
+        };
+
+        newList = favorite.filter(item => item.id !== newFavorite.id);
+        return setFavorite(newList);
+    };
+
+    return { favorite, addFavorite };
+};
