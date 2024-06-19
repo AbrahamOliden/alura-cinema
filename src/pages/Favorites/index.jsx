@@ -10,9 +10,11 @@ function Favorites() {
     <>
     <Banner img="favoritos" color="#00BF63" />
     <Title text="Favoritos"/>
-    <Card 
-      capa="https://i.ytimg.com/vi/cixof3jguHU/maxresdefault.jpg" 
-      titulo="Tacos de sesos" />
+    <section className={styles.container} >
+      <Card 
+        capa="https://i.ytimg.com/vi/cixof3jguHU/maxresdefault.jpg" 
+        titulo="Tacos de sesos" />
+    </section>
     </>
   );
 };
