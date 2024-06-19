@@ -1,4 +1,4 @@
-import styles from './Card.modules.css';
+import styles from './Card.module.css';
 
 import React from 'react'
 
