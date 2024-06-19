@@ -3,6 +3,9 @@ import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import Title from "../../components/Title";
 import Card from "../../components/Card";
+import videos from "../../data/db.json";
+
+import styles from 'index.module.css';
 
 function Home() {
     return (
@@ -10,10 +13,10 @@ function Home() {
             <Header />
             <Banner img='home' color="#154580" />
             <Title text='Un lugar para guardar sus videos favoritos' />
-            <Card 
+            {/* <Card 
                 id={1} 
                 title='Perro' 
-                image='https://api.thecatapi.com/api/images/get?format=src&ype=png'/>
+                image='https://api.thecatapi.com/api/images/get?format=src&ype=png'/> */}
             <Footer />
         </>
     );
