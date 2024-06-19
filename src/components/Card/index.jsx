@@ -2,7 +2,7 @@ import styles from './Card.module.css';
 
 import React from 'react'
 
-function Card({id, image, title}) {
+function Card({id, capa: image, title}) {
   return (
     <div className={styles.container}>
         <img src={image} alt={title} className={styles.image} />
