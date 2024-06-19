@@ -1,0 +1,11 @@
+.container {
+    margin-top: 10px;
+    padding: 0 0 17px 0;
+    width: 282px;
+    background-color: var(--gray);
+    color: var(--black);
+}
+
+.image {
+    width: 100%;
+}
