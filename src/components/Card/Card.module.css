@@ -14,5 +14,10 @@
     font-size: 1rem;
     font-weight: 700;
     line-height: 22px;
+    margin: 10px 10px 0;
     color: var(--black);
+}
+
+.icon {
+    margin-top: 10px;
 }

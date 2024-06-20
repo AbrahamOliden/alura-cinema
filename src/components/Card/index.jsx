@@ -21,6 +21,7 @@ function Card({ id, capa: image, titulo: title }) {
       <img
         src={icon}
         alt="favorite icon"
+        className={styles.icon}
         onClick={() => addFavorite({ id, image, title })} />
     </div>
   );
