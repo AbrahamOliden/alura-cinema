@@ -1,8 +1,11 @@
 .container {
     display: flex;
-    place-items: center;
-    height: 100vh;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
     width: 100%;
+    gap: 32px;
 }
 
 .error {
@@ -12,4 +15,5 @@
 
 .message {
     font-size: 2rem;
+    color: red;
 }
